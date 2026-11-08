@@ -12,7 +12,6 @@ Files in this skill:
 - `assets/remotion-template/` is what it copies: the auto-zoom camera, window, cursor, spotlights, overlays and an example screen and story. **Only `src/story.tsx` and `src/screens/*` change per demo.**
 - `references/story-api.md` documents every story field, the screen hooks and how to measure positions. Read it before writing a story.
 - `references/style.md` is the AutoZoom look: frame, motion and overlays.
-- `assets/example.mp4` shows the kind of result to aim for.
 
 ## Workflow
 

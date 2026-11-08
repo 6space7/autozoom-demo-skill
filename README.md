@@ -1,5 +1,7 @@
 # AutoZoom demo skill
 
+[![skills.sh](https://skills.sh/b/6space7/autozoom-demo-skill)](https://skills.sh/6space7/autozoom-demo-skill)
+
 Turn any feature in your codebase into a polished, AutoZoom-style demo video, from one prompt.
 
 ```
@@ -24,10 +26,24 @@ Your product keeps its own look. Everything around it (the window, camera, curso
 ## Install
 
 ```bash
-git clone https://github.com/6space7/autozoom-demo-skill ~/.claude/skills/autozoom-demo-scenes
+npx skills add 6space7/autozoom-demo-skill
 ```
 
-For a single project, clone it into `.claude/skills/autozoom-demo-scenes` inside that project instead.
+The [skills CLI](https://skills.sh) detects your coding agents (Claude Code, Cursor, Codex, Windsurf and more) and installs the skill for them. Useful flags:
+
+```bash
+npx skills add 6space7/autozoom-demo-skill -g                # all your projects
+npx skills add 6space7/autozoom-demo-skill -a claude-code    # one specific agent
+```
+
+<details>
+<summary>Manual install (Claude Code)</summary>
+
+```bash
+git clone https://github.com/6space7/autozoom-demo-skill /tmp/autozoom-demo-skill
+cp -R /tmp/autozoom-demo-skill/skills/autozoom-demo-scenes ~/.claude/skills/
+```
+</details>
 
 Requirements: Node 18+. The skill installs Remotion and React into a `demo/` folder in your project the first time it runs.
 
@@ -50,6 +66,8 @@ npm run render    # → out/demo.mp4
 ```
 
 ## How it's built
+
+All of it lives in [`skills/autozoom-demo-scenes/`](skills/autozoom-demo-scenes):
 
 | Path | What's there |
 |---|---|
